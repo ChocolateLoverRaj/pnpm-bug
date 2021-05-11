@@ -1,0 +1,21 @@
+lockfileVersion: 5.3
+
+importers:
+
+  packages/a:
+    specifiers:
+      last-element: 1.0.1
+    dependencies:
+      last-element: 1.0.1
+
+  packages/b:
+    specifiers:
+      a: workspace:^1.0.0
+    dependencies:
+      a: link:../a
+
+packages:
+
+  /last-element/1.0.1:
+    resolution: {integrity: sha512-6lcO7Ot3qLbyylmpl3/NH9f+myQUISG4btcLNKuq6skN6QKcbJQSykDo1iE2vU2n8N5M42gGSRFkzYpWB0VIlg==}
+    dev: false
